@@ -18,7 +18,8 @@ async function main() {
   //    ^?
   console.log('Users:', users);
 
-  const createdUser = await trpc.userCreate.mutate({ name: 'sachinraja' });
+  //const createdUser = await trpc.userCreate.mutate({ name: 'sachinraja' });
+  const createdUser = await trpc.userCreate.mutate({ jiile: 5 }); //this would raise an error
   //    ^?
   console.log('Created user:', createdUser);
 
